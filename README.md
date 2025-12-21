@@ -1,2 +1,7 @@
-# Panda-3mf-toolbox
-Panda 3MF Toolbox is a Blender add-on for importing and exporting 3MF files with correct real-world scale in millimeters, designed for reliable use with slicers.
+# Panda 3MF Toolbox
+
+Blender add-on for importing and exporting 3MF files with correct real-world scale in millimeters.
+
+## Support
+Please report issues using GitHub Issues.
+
