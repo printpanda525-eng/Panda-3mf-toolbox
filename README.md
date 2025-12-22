@@ -2,7 +2,7 @@
 
 **Panda 3MF Toolbox** is a lightweight Blender add-on for importing and exporting **3MF files** with correct real-world scale in millimeters.
 
-This add-on is intended to provide a simple and reliable 3MF workflow inside Blender, focused on scale accuracy and compatibility with modern slicers.
+This add-on provides a simple and reliable 3MF workflow inside Blender, focused on scale accuracy and compatibility with modern slicers.
 
 ---
 
@@ -24,6 +24,20 @@ This add-on is intended to provide a simple and reliable 3MF workflow inside Ble
 
 ---
 
+## Free vs Accurate Version
+
+| Feature | Panda 3MF Toolbox (Free) | Panda 3MF Accurate Toolbox |
+|------|--------------------------|----------------------------|
+| 3MF Import / Export | ✔ | ✔ |
+| Correct millimeter scale | ✔ | ✔ |
+| Batch Export (Plates) | ✖ | ✔ |
+| Virtual Build Plate | ✖ | ✔ |
+| Transform Tools | ✖ | ✔ |
+| Real Size Measurements | ✔ | ✔ |
+| Advanced Printing Workflow | ✖ | ✔ |
+
+---
+
 ## Limitations
 
 - This add-on does not fix or validate geometry
@@ -42,5 +56,3 @@ Please report bugs or issues using **GitHub Issues**.
 ## Credits
 
 Developed and maintained by **Panda Print**.
-
-
