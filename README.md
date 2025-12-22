@@ -32,7 +32,7 @@ This add-on provides a simple and reliable 3MF workflow inside Blender, focused 
 | Correct millimeter scale | ✔ | ✔ |
 | Batch Export (Plates) | ✖ | ✔ |
 | Virtual Build Plate | ✖ | ✔ |
-| Transform Tools | ✖ | ✔ |
+| Transform Tools | Limited | ✔ |
 | Real Size Measurements | ✔ | ✔ |
 | Advanced Printing Workflow | ✖ | ✔ |
 
