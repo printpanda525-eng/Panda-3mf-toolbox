@@ -4,6 +4,9 @@
 
 This add-on provides a simple and reliable 3MF workflow inside Blender, focused on scale accuracy and compatibility with modern slicers.
 
+This add-on does not modify Blender units or scene scale and works directly with millimeter-accurate data.
+
+
 ---
 
 ## Features
@@ -26,6 +29,7 @@ This add-on provides a simple and reliable 3MF workflow inside Blender, focused 
 
 ## Free vs Accurate Version
 
+
 | Feature | Panda 3MF Toolbox (Free) | Panda 3MF Accurate Toolbox |
 |------|--------------------------|----------------------------|
 | 3MF Import / Export | ✔ | ✔ |
@@ -36,6 +40,10 @@ This add-on provides a simple and reliable 3MF workflow inside Blender, focused 
 | Real Size Measurements | ✔ | ✔ |
 | Advanced Printing Workflow | ✖ | ✔ |
 
+The Free version focuses on reliable 3MF import and export with correct real-world scale.
+Advanced production and batch workflows are available in the Accurate version.
+
+
 ---
 
 ## Limitations
@@ -44,6 +52,14 @@ This add-on provides a simple and reliable 3MF workflow inside Blender, focused 
 - No batch export or build plate management
 - Final print validation is performed by the slicer
 - Geometry is exported exactly as it exists in the scene
+
+---
+
+## Blender Extensions
+
+Panda 3MF Toolbox is currently under review for Blender Extensions.
+
+The version available on Blender Extensions may lag behind the GitHub repository during the review process.
 
 ---
 
