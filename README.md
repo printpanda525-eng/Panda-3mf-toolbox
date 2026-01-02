@@ -80,6 +80,19 @@ Use this if you scaled or rotated an object just for visualization or layout, bu
 This does not modify the object in the scene.
 
 ---
+## Recommended Blender Units for 3D Printing
+
+This addon is designed to work with Blender’s default metric configuration:
+
+- **Unit System:** Metric
+- **Unit Scale:** **1.0**
+- **Length:** Millimeters
+
+This setup avoids scale issues, keeps modifiers and addons stable, and ensures consistent results across all slicers (Cura, PrusaSlicer, Orca, Bambu, etc.).
+
+Changing the Unit Scale to **0.001** or relying on slicer-specific behavior may cause incorrect dimensions or export problems.
+
+---
 ## Limitations
 
 - This add-on does not fix or validate geometry
