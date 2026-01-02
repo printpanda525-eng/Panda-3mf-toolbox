@@ -5,7 +5,20 @@
 This add-on provides a simple and reliable 3MF workflow inside Blender, focused on scale accuracy and compatibility with modern slicers.
 
 This add-on does not modify Blender units or scene scale and works directly with millimeter-accurate data.
+---
+### STL vs 3MF (Focused on 3D Printing)
 
+| Feature | STL | 3MF |
+|--------|-----|-----|
+| Scale accuracy | ❌ Does not store units (mm/in) | ✅ Stores real units |
+| Import size | ❌ May import too large or too small | ✅ Imports at correct scale |
+| Model orientation | ❌ Not preserved | ✅ Preserved |
+| Printing information | ❌ Geometry only | ✅ Includes print-related data |
+| Colors / materials | ❌ Not supported | ✅ Supported (optional) |
+| Import errors in slicer | ⚠️ More common | ✅ Less frequent |
+| Manual adjustments | ⚠️ Often required | ✅ Minimal |
+| Compatibility | ✅ Very high | ✅ High (modern slicers) |
+| Recommended format | ❌ Legacy format | ✅ Modern and recommended |
 
 ---
 
