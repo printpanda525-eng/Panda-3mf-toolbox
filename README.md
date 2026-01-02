@@ -43,6 +43,13 @@ This add-on does not modify Blender units or scene scale and works directly with
 The Free version focuses on reliable 3MF import and export with correct real-world scale.
 Advanced production and batch workflows are available in the Accurate version.
 
+<div align="center">
+
+<img src="images/3mf-toolb.png" width="420" />
+&nbsp;&nbsp;&nbsp;
+<img src="images/accurate-3mf.png" width="420" />
+
+</div>
 
 ---
 
