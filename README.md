@@ -58,7 +58,15 @@ Advanced production and batch workflows are available in the Accurate version.
 
 
 ---
+### Ignore Artistic Transforms
 
+This option exports the model using its real physical size, ignoring visual-only transforms applied in Blender.
+
+Use this if you scaled or rotated an object just for visualization or layout, but want to export it at its original real-world size for 3D printing.
+
+This does not modify the object in the scene.
+
+---
 ## Limitations
 
 - This add-on does not fix or validate geometry
