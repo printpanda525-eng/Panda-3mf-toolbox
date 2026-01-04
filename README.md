@@ -5,7 +5,9 @@
 This add-on provides a simple and reliable 3MF workflow inside Blender, focused on scale accuracy and compatibility with modern slicers.
 
 This add-on does not modify Blender units or scene scale and works directly with millimeter-accurate data.
+
 ---
+
 ### STL vs 3MF (Focused on 3D Printing)
 
 | Feature | STL | 3MF |
@@ -26,6 +28,9 @@ This add-on does not modify Blender units or scene scale and works directly with
 
 - Import 3MF files into Blender
 - Export 3MF files with correct millimeter scale
+- Pre-export validation to prevent common export mistakes
+- Detection of unapplied object transforms
+- Protection against exporting meshes with active modifiers
 - Quick export workflow using the current .blend file location
 - Designed for real-world 3D printing workflows
 
@@ -42,7 +47,6 @@ This add-on does not modify Blender units or scene scale and works directly with
 
 ## Free vs Accurate Version
 
-
 | Feature | Panda 3MF Toolbox (Free) | Panda 3MF Accurate Toolbox |
 |------|--------------------------|----------------------------|
 | 3MF Import / Export | ✔ | ✔ |
@@ -53,7 +57,7 @@ This add-on does not modify Blender units or scene scale and works directly with
 | Real Size Measurements | ✔ | ✔ |
 | Advanced Printing Workflow | ✖ | ✔ |
 
-The Free version focuses on reliable 3MF import and export with correct real-world scale.
+The Free version focuses on reliable 3MF import and export with correct real-world scale.  
 Advanced production and batch workflows are available in the Accurate version.
 
 <table align="center">
@@ -69,17 +73,37 @@ Advanced production and batch workflows are available in the Accurate version.
   </tr>
 </table>
 
+---
+
+### Pre-Export Validation
+
+When enabled, the exporter performs safety checks **before saving the file** to help avoid common 3D printing issues.
+
+#### What this validation checks:
+
+- **Active modifiers**  
+  If any mesh has active modifiers (Mirror, Subdivision, etc.), export is blocked and the user must apply them manually.  
+  This prevents incomplete or broken geometry in slicers.
+
+- **Unapplied object transforms**  
+  If scale or rotation is not applied, the addon lets you choose how to proceed.
+
+#### Available options:
+
+- **Apply & Export**  
+  Applies transformations **only to the exported file**, without modifying the original object in Blender.
+
+- **Continue Anyway**  
+  Exports the model exactly as it appears, keeping all transforms unapplied.
+
+#### Important notes:
+
+- The addon **never modifies the original Blender objects**
+- All corrections are applied only to a temporary export copy
+- This allows exporting multiple versions safely without risking the scene
 
 ---
-### Ignore Artistic Transforms
 
-This option exports the model using its real physical size, ignoring visual-only transforms applied in Blender.
-
-Use this if you scaled or rotated an object just for visualization or layout, but want to export it at its original real-world size for 3D printing.
-
-This does not modify the object in the scene.
-
----
 ## Recommended Blender Units for 3D Printing
 
 This addon is designed to work with Blender’s default metric configuration:
@@ -93,12 +117,13 @@ This setup avoids scale issues, keeps modifiers and addons stable, and ensures c
 Changing the Unit Scale to **0.001** or relying on slicer-specific behavior may cause incorrect dimensions or export problems.
 
 ---
+
 ## Limitations
 
-- This add-on does not fix or validate geometry
-- No batch export or build plate management
+- This add-on does not automatically fix geometry
+- No batch export or build plate management in the Free version
 - Final print validation is performed by the slicer
-- Geometry is exported exactly as it exists in the scene
+- Geometry is exported exactly as defined by the chosen export option
 
 ---
 
