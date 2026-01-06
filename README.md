@@ -60,6 +60,7 @@ This add-on does not modify Blender units or scene scale and works directly with
 The Free version focuses on reliable 3MF import and export with correct real-world scale.  
 Advanced production and batch workflows are available in the Accurate version.
 
+---
 <table align="center">
   <tr>
     <td align="center">
