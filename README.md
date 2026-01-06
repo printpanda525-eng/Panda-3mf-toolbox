@@ -45,30 +45,28 @@ This add-on does not modify Blender units or scene scale and works directly with
 
 ---
 
-## Free vs Accurate Version
+## 🆓 Free vs Accurate Version
 
-| Feature | Panda 3MF Toolbox (Free) | Panda 3MF Accurate Toolbox |
-|------|--------------------------|----------------------------|
-| 3MF Import / Export | ✔ | ✔ |
-| Correct millimeter scale | ✔ | ✔ |
+| Feature | Free Version | Accurate Version |
+|------|--------------|------------------|
+| Basic 3MF Import / Export | ✔ | ✔ |
+| Standard Save As workflow | ✔ | ✔ |
+| Pre-Export Validation | ✔ | ✔ |
+| Multi-Material Support | ✖ | ✔ |
 | Batch Export (Plates) | ✖ | ✔ |
 | Virtual Build Plate | ✖ | ✔ |
-| Transform Tools | Limited | ✔ |
+| Advanced Tools | Limited | ✔ |
 | Real Size Measurements | ✔ | ✔ |
-| Advanced Printing Workflow | ✖ | ✔ |
-
-The Free version focuses on reliable 3MF import and export with correct real-world scale.  
-Advanced production and batch workflows are available in the Accurate version.
 
 ---
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/3mf-toolb.png" width="300" />
+      <img src="images/V_toolb_3mf.png" width="300" />
       <br><b>Free Version</b>
     </td>
     <td align="center">
-      <img src="images/accurate-3mf.png" width="300" />
+      <img src="images/V_accurate_3mf.png" width="300" />
       <br><b>Accurate Version</b>
     </td>
   </tr>
